@@ -1,0 +1,22 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "pwa",
+  "main": "index.html",
+  "scripts": {
+    "autoStart": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Leminee/MyDataPWA.git"
+  },
+  "author": "Lemine",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Leminee/MyDataPWA/issues"
+  },
+  "homepage": "https://github.com/Leminee/MyDataPWA#readme",
+  "dependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

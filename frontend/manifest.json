@@ -1,0 +1,20 @@
+{
+  "name": "PWA",
+  "short_name": "PWA",
+  "start_url": "/index.html",
+  "background_color": "#443636",
+  "theme_color": "#5c5b5b",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": true,
+  "icons": [
+
+    {
+      "src": "/src/images/icons/icon16px.png",
+      "type":"image/png",
+      "sizes": "16x16"
+    }
+
+  ]
+
+}
