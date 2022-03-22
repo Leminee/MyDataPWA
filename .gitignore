@@ -33,4 +33,8 @@ build/
 .vscode/
 frontend/node_modules/*
 
+### other
+.mvn
 .DS_Store
+mvnw.cmd
+mvnw
