@@ -1,0 +1,102 @@
+2022-03-19 05:24:36,984 [main] INFO  de.pwa.api.PwaApplication                          - Starting PwaApplication using Java 17 on Lemines-MBP with PID 27675 (/Users/lem/Downloads/pwa/target/classes started by lem in /Users/lem/Downloads/pwa)
+2022-03-19 05:24:36,987 [main] INFO  de.pwa.api.PwaApplication                          - No active profile set, falling back to 1 default profile: "default"
+2022-03-19 05:24:37,458 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:24:37,459 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:24:37,479 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2022-03-19 05:24:37,480 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 16 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-19 05:24:37,482 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:24:37,483 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:24:37,485 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2022-03-19 05:24:37,485 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-19 05:24:37,490 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:24:37,490 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-19 05:24:37,507 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2022-03-19 05:24:37,835 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-03-19 05:24:37,841 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:24:37,841 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-03-19 05:24:37,841 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-19 05:24:37,931 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-03-19 05:24:37,931 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 906 ms
+2022-03-19 05:24:38,027 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-19 05:24:38,060 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-19 05:24:38,156 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-19 05:24:38,218 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2022-03-19 05:24:38,418 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2022-03-19 05:24:38,426 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-03-19 05:24:38,766 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-19 05:24:38,771 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:24:38,925 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-19 05:24:39,331 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:24:39,338 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-19 05:24:39,345 [main] INFO  de.pwa.api.PwaApplication                          - Started PwaApplication in 2.606 seconds (JVM running for 3.329)
+2022-03-19 05:24:47,525 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:24:47,526 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2022-03-19 05:24:47,530 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2022-03-19 05:25:11,488 [main] INFO  de.pwa.api.PwaApplication                          - Starting PwaApplication using Java 17 on Lemines-MBP with PID 27740 (/Users/lem/Downloads/pwa/target/classes started by lem in /Users/lem/Downloads/pwa)
+2022-03-19 05:25:11,489 [main] INFO  de.pwa.api.PwaApplication                          - No active profile set, falling back to 1 default profile: "default"
+2022-03-19 05:25:11,982 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:11,983 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:25:11,999 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2022-03-19 05:25:12,000 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 14 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-19 05:25:12,003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:12,003 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:25:12,005 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2022-03-19 05:25:12,005 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 2 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-19 05:25:12,011 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:12,011 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-19 05:25:12,032 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-03-19 05:25:12,368 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-03-19 05:25:12,374 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:25:12,374 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-03-19 05:25:12,374 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-19 05:25:12,464 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-03-19 05:25:12,465 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 939 ms
+2022-03-19 05:25:12,558 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-19 05:25:12,584 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-19 05:25:12,673 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-19 05:25:12,742 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2022-03-19 05:25:12,938 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2022-03-19 05:25:12,945 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-03-19 05:25:13,323 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-19 05:25:13,328 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:25:13,495 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-19 05:25:13,955 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:25:13,964 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-19 05:25:13,973 [main] INFO  de.pwa.api.PwaApplication                          - Started PwaApplication in 2.683 seconds (JVM running for 3.309)
+2022-03-19 05:25:16,208 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:25:16,210 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2022-03-19 05:25:16,215 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
+2022-03-19 05:25:17,759 [main] INFO  de.pwa.api.PwaApplication                          - Starting PwaApplication using Java 17 on Lemines-MBP with PID 27749 (/Users/lem/Downloads/pwa/target/classes started by lem in /Users/lem/Downloads/pwa)
+2022-03-19 05:25:17,761 [main] INFO  de.pwa.api.PwaApplication                          - No active profile set, falling back to 1 default profile: "default"
+2022-03-19 05:25:18,246 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:18,247 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:25:18,263 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ElasticsearchRepository, org.springframework.data.elasticsearch.repository.ElasticsearchRepository.
+2022-03-19 05:25:18,264 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 14 ms. Found 0 Elasticsearch repository interfaces.
+2022-03-19 05:25:18,267 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:18,267 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data Reactive Elasticsearch repositories in DEFAULT mode.
+2022-03-19 05:25:18,269 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport  - Spring Data Reactive Elasticsearch - Could not safely identify store assignment for repository candidate interface de.pwa.api.repository.UserRepository. If you want this repository to be a Reactive Elasticsearch repository, consider annotating your entities with one of these annotations: org.springframework.data.elasticsearch.annotations.Document (preferred), or consider extending one of the following types with your repository: org.springframework.data.elasticsearch.repository.ReactiveElasticsearchRepository.
+2022-03-19 05:25:18,269 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 1 ms. Found 0 Reactive Elasticsearch repository interfaces.
+2022-03-19 05:25:18,273 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-03-19 05:25:18,274 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-03-19 05:25:18,291 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate          - Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2022-03-19 05:25:18,617 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat initialized with port(s): 8080 (http)
+2022-03-19 05:25:18,623 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Initializing ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:25:18,624 [main] INFO  org.apache.catalina.core.StandardService           - Starting service [Tomcat]
+2022-03-19 05:25:18,624 [main] INFO  org.apache.catalina.core.StandardEngine            - Starting Servlet engine: [Apache Tomcat/9.0.58]
+2022-03-19 05:25:18,711 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/]                 - Initializing Spring embedded WebApplicationContext
+2022-03-19 05:25:18,711 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext     - Root WebApplicationContext: initialization completed in 909 ms
+2022-03-19 05:25:18,801 [main] INFO  o.hibernate.jpa.internal.util.LogHelper            - HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-03-19 05:25:18,827 [main] INFO  org.hibernate.Version                              - HHH000412: Hibernate ORM core version 5.6.5.Final
+2022-03-19 05:25:18,914 [main] INFO  org.hibernate.annotations.common.Version           - HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-03-19 05:25:18,987 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Starting...
+2022-03-19 05:25:19,192 [main] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Start completed.
+2022-03-19 05:25:19,200 [main] INFO  org.hibernate.dialect.Dialect                      - HHH000400: Using dialect: org.hibernate.dialect.MariaDB103Dialect
+2022-03-19 05:25:19,565 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator                 - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-03-19 05:25:19,573 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:25:19,730 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-03-19 05:25:20,152 [main] INFO  o.apache.coyote.http11.Http11NioProtocol           - Starting ProtocolHandler ["http-nio-8080"]
+2022-03-19 05:25:20,165 [main] INFO  o.s.b.w.embedded.tomcat.TomcatWebServer            - Tomcat started on port(s): 8080 (http) with context path ''
+2022-03-19 05:25:20,172 [main] INFO  de.pwa.api.PwaApplication                          - Started PwaApplication in 2.691 seconds (JVM running for 3.2)
+2022-03-19 05:25:20,184 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean     - Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-03-19 05:25:20,185 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown initiated...
+2022-03-19 05:25:20,190 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource                 - HikariPool-1 - Shutdown completed.
