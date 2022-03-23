@@ -2,7 +2,6 @@ package de.pwa.api.controller;
 
 import de.pwa.api.entity.User;
 import de.pwa.api.service.UserServiceImpl;
-import org.elasticsearch.ResourceNotFoundException;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
@@ -33,7 +32,7 @@ public class UserController {
     @PostMapping("/registration")
     public ResponseEntity<String> signIn(@Valid @RequestBody User user) {
 
-        userService.save(user);
+        userService.createAccount(user);
 
         logger.info("User created: " + user);
 
@@ -45,15 +44,13 @@ public class UserController {
 
         logger.info("Id entered: " + userId);
 
-        return new ResponseEntity<>(Optional.ofNullable(userService.getUserById(userId)), HttpStatus.OK);
+        return new ResponseEntity<>(userService.getUserById(userId), HttpStatus.OK);
     }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<String> deleteUserById(@PathVariable("id") Long id) throws ResourceNotFoundException {
+    public ResponseEntity<String> deleteUserById(@PathVariable("id") long id) {
 
-        final User user = userService.getUserById(id);
-
-        userService.delete(user);
+        userService.deleteUserAccountById(id);
 
         return new ResponseEntity<>("Account wurde erfolgreich gelöscht", HttpStatus.ACCEPTED);
     }

@@ -2,7 +2,6 @@ package de.pwa.api.service;
 
 import de.pwa.api.entity.User;
 import de.pwa.api.repository.UserRepository;
-import org.elasticsearch.ResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -25,26 +24,20 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public User save(User user) {
+    public void createAccount(User user) {
 
-        return this.userRepository.save(user);
+        userRepository.save(user);
     }
 
     @Override
-    public User getUserById(long id) throws ResourceNotFoundException {
-        Optional<User> optional = userRepository.findById(id);
-        User user;
-        if (optional.isPresent()) {
-            user = optional.get();
-        } else {
-            throw new ResourceNotFoundException("User not found on :: " + id);
-        }
-        return user;
+    public Optional<User> getUserById(long id) {
+
+        return userRepository.findById(id);
     }
 
     @Override
-    public void delete(User user) {
-        userRepository.delete(user);
+    public void deleteUserAccountById(final long id) {
+        userRepository.deleteById(id);
     }
 
 
