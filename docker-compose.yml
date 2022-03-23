@@ -1,23 +1,23 @@
-version: "1.0"
+version: "3.9"
 
 services:
 
   #frontend:
     #container_name: "frontend"
-    #build: "frontend/."
+    #build: "./frontend"
     #restart: "always"
     #networks:
-      #- pwa
+      #- "pwa"
 
-  #pwa-api:
-    # container_name: "pwa-api"
+  #api:
+    #container_name: "api"
     #build: .
     #restart: "always"
     #depends_on:
-    #- "database"
-    #- "elasticsearch"
+      #- "database"
+      #- "elasticsearch"
     #networks:
-    #- pwa
+      #- "pwa"
 
   elasticsearch:
     container_name: "elasticsearch"
@@ -29,11 +29,11 @@ services:
     depends_on:
       - "database"
     networks:
-      - pwa
+      - "pwa"
 
   database:
     container_name: "database"
-    image: "mariadb:latest"
+    image: "mariadb:10.7.3"
     restart: "always"
     ports:
       - "3306:3306"
@@ -43,13 +43,13 @@ services:
       MYSQL_USER: "pwa"
       MYSQL_PASSWORD: "pwa"
     volumes:
-      - pwa:/var/lib/mysql
+      - "pwa:/var/lib/mysql"
     networks:
-      - pwa
+      - "pwa"
 
 networks:
   pwa:
-    driver: bridge
+    driver: "bridge"
 
 volumes:
   pwa:
