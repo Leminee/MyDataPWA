@@ -67,6 +67,8 @@
 				</configuration>
 			</plugin>
 		</plugins>
+
+		<finalName>pwa</finalName>
 	</build>
 
 </project>
